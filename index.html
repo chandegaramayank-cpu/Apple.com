@@ -17,7 +17,7 @@
 .carousel{
   position:relative;
   width:100%;
-  height:700px;
+  height:750px;
   margin-bottom: 12PX;
   display:flex;
   justify-content:center;
@@ -26,12 +26,27 @@
   background-color: #f5f5f7;
 }
 
+.carousel h1{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:20;
+  font-size:2.5rem;
+  font-weight:600;
+  color:#000;
+  text-align:center;
+  pointer-events:none;
+}
+
+
 .track{
+    margin-top: 50px;
   position:relative;
   width:100%;
   height:100%;
   display:flex;
-  justify-content:center;
+  justify-content:center;  
   align-items:center;
 }
 
@@ -198,16 +213,62 @@
 <!--CAROUSEL--------------------------------------------------------------------->
 
 <div class="carousel" id="carousel">
+    <h1>Endless Entertainment.</h1>
   <div class="track">
-    <div class="card" style="background-image:url('asset-0.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-3.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-5.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-7.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-9.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-11.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-13.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-15.jpeg')"></div>
-    <div class="card" style="background-image:url('asset-17.jpeg')"></div>
+    <div class="card" style="background-image:url('asset-0.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 20px;">Stream Now</button>
+            <p>Action &#8226 Now Streming ON Apple TV</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-3.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Drama &#8226 Happiness is a state of Mind.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-5.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Suapance &#8226 New Session.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-7.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Comedy &#8226 Getting it together. together.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-9.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Thriller &#8226 Curiosity Kill.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-11.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Drama &#8226 The truth is Top Story.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-13.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Comedy &#8226 New Release.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-15.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Action &#8226 Top of The Action.</p>
+        </div>
+    </div>
+    <div class="card" style="background-image:url('asset-17.jpeg')">
+        <div class="abc1">
+            <button style="height:40px; width: 150px; border: none; border-radius: 50px; margin-top: 550px; margin-left: 50px;">Stream Now</button>
+            <p>Comedy &#8226 Kindness makes a Comeback.</p>
+        </div>
+    </div>
   </div>
 </div>
 
@@ -349,7 +410,7 @@ function startAuto(){
   autoSlide = setInterval(()=>{
     active = (active + 1) % total;
     render();
-  }, 2500);
+  }, 1000);
 }
 function stopAuto(){
   clearInterval(autoSlide);
